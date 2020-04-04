@@ -15,5 +15,10 @@ Connect the servo to the Wemos D1 as shown:
 ![DayClock-servo.png](https://github.com/phreakmonkey/DayClock/blob/master/artifacts/DayClock-servo.png?raw=true)
 
 Edit DayClock.cpp to set your WiFi SSID, Password, and timezone (UTC_OFFSET)
+Compile & upload to the ESP8266.  (Personally, I use PlatformIO.  YMMV with the Arduino IDE.)
 
-Voila!
+When the unit first powers on it will cycle the servo to each of the 7 "day" positions.  Make a note of any that you want to adjust and increase/decrease the "degrees" in the source file appropriately.
+
+The program will output some diagnostic info (Wifi connection status, current time & date when it syns with NTP, &etc) via the USB serial port at 115200 baud.
+
+Have fun!
