@@ -20,7 +20,13 @@ const int ServoPin     = D6;            // Which Arduino pin is the servo connec
 
 // Servo degree positons
 // Adjust as needed:  Sun  Mon  Tue  Wed  Thu  Fri  Sat
-const int day[7] =   {160,  133,  110,  87,  67, 44, 20};
+const int day[7] =   {160, 133, 110,  87,  67,  44,  20};
+
+// If your servo turns the "wrong direction" just reverse the order by 
+// commenting out the above and using the following instead.
+// Adjust as needed:  Sun  Mon  Tue  Wed  Thu  Fri  Sat
+//const int day[7] =   { 20,  44,  67,  87, 110, 133, 160};
+
 const int servodelay = 10;  // Servo speed, smaller is faster (default: 10)
 
 // Interval Timer
@@ -109,4 +115,4 @@ void loop() {
       Serial.println(rolloversec);
     }
   }
-} 
+}
