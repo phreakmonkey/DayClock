@@ -9,7 +9,7 @@
 
 #include <Arduino.h>
 #include <Servo.h>
-#include <NTPtimeESP.h>  
+#include <NTPtimeESP.h>
 
 NTPtime NTPpool("0.us.pool.ntp.org");   // Choose server pool as required
 const char *ssid       = "SSID";        // Set you WiFi SSID
@@ -20,7 +20,7 @@ const int ServoPin     = D6;            // Which Arduino pin is the servo connec
 
 // Servo degree positons
 // Adjust as needed:  Sun  Mon  Tue  Wed  Thu  Fri  Sat
-const int day[7] =   {20,  44,  67,  87,  110, 140, 167};
+const int day[7] =   {160,  133,  110,  87,  67, 44, 20};
 const int servodelay = 10;  // Servo speed, smaller is faster (default: 10)
 
 // Interval Timer
@@ -33,7 +33,7 @@ unsigned long rollover = 0;
 
 strDateTime dateTime;
 Servo myservo;
-uint8_t today = 1;
+uint8_t today = 7;
 
 
 void moveto(uint8_t d) {
