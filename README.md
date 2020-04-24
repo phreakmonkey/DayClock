@@ -8,7 +8,7 @@ A simple "clock" to tell you what day it is.  It utilizes the NTPtimeESP library
 Parts list:
   - Wemos D1 Mini (or suitable ESP8266 dev board)
   - "9g" Micro Servo (standard 12mm x 23mm)
-  - 3D printed STL files in this repo
+  - 3D printed STL files in this repo. (STL models are in millimeters)
 
 Connect the servo to the Wemos D1 as shown:
 
